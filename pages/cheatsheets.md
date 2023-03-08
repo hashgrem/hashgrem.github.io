@@ -4,4 +4,4 @@ title: Cheat sheets
 permalink: /cheatsheets/
 ---
 
-Coming soon
+Coming soon...
