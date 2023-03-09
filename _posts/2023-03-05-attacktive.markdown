@@ -169,7 +169,7 @@ In this case, "svc-admin" user is able to log in without going through this pre-
 
 Once the enumeration of user accounts is completed, we can try to exploit a feature in Kerberos using an attack technique known as ASREPRoasting. ASREPRoasting happens when a user account has the privilege "Does not require Pre-Authentication" enabled as explained in the previous step.
 
-To exploit this vulnerability, we will use `GetNPUsers` script from Impacket (https://github.com/fortra/impacket).
+To exploit this vulnerability, we will use `GetNPUsers` script from Impacket (<a href="https://github.com/fortra/impacket">https://github.com/fortra/impacket</a>).
 
 ### GetNPUsers
 
@@ -186,7 +186,7 @@ Now we have our hash for svc-admin user, we can try to crack him using hashcat o
 
 ### Hashcat
 
-I used hashcat examples ( https://hashcat.net/wiki/doku.php?id=example_hashes ) to get the right mode.
+I used hashcat examples ( <a href="https://hashcat.net/wiki/doku.php?id=example_hashes">Hashcat exemples</a> ) to get the right mode.
 
 ![mode-hashcat](/images/hashcat.png)
 ```bash
