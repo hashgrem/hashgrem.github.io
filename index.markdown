@@ -11,9 +11,9 @@ layout: home
           <img src="images/giyu.gif" alt="Photo de profil" style="border-radius:50%;">
           <h2>Cybersecurity <span class="typeWriter" data-speed="2" data-text='["student", "enthusiast", "practitioner"]'></span></h2>
           <div class="external-links">
-            <a title="Flux RSS" target="_blank" href="/feed.xml"><i class="fas fa-rss"></i></a>
+            <a title="Flux RSS" target="_blank" id ='rss' href="/feed.xml"><i class="fas fa-rss"></i></a>
             <a title="Github"   target="_blank" href="https://github.com/hashgrem"><i class="fab fa-github"></i></a>
-            <a title="Linkedin" target="_blank" href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-demard-102b35238/"><i class="fab fa-linkedin"></i></a>
+            <a title="Linkedin" target="_blank" id='linkedin' href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-demard-102b35238/"><i class="fab fa-linkedin"></i></a>
             <a title="root-me"  target="_blank" href="https://root-me.org/teiiko"><img src="images/root-me.svg" class="root-me"></a>
           </div>
 </section>
@@ -58,6 +58,14 @@ layout: home
     transform: rotateZ(20deg);
 }
 
+#rss:hover{
+  color:orange;
+}
+
+#linkedin:hover{
+  color:#1b65d1;
+}
+
 .root-me {
   height: 40px !important;
   width: 40px !important;
@@ -82,6 +90,5 @@ layout: home
     width: 35px !important;
   }
 }
-
 </style>
     
