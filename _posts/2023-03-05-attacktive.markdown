@@ -335,7 +335,7 @@ Now we have Administrator password hash in possession, we can move on a Pass The
 
 Thanks for reading ! Give me a feedback on Discord - `Teiiko#8831`
 
-<button id="back-to-top-btn" class="btn btn-primary2 btn-lg circle"><i class="fas fa-arrow-up"></i></button>
+<button id="back-to-top-btn" class="btn arrow btn-lg circle"><i class="fas fa-arrow-up"></i></button>
 
 <style>
 #back-to-top-btn {
