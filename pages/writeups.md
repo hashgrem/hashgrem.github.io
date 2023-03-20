@@ -17,7 +17,7 @@ permalink: /writeups/
             <a href="{{ post.url }}">{{ post.title }}</a>
           </h4>
           <p class="card-text">{{ post.description }}</p>
-          <p class="card-text"><small class="text-muted"><i class="far fa-calendar-alt"></i> {{ post.date | date: "%b %d, %Y" }} • {{ post.author }}</small>
+          <p class="card-text"><small class="text-muted"><i class="far fa-calendar-alt"></i> {{ post.date | date: "%b %d, %Y" }} • <i class="fas fa-clock"></i><i> {{ post.reading }} reading</i> • <i class="fas fa-user"></i> {{ post.author }}</small>
           {% case post.difficulty %}
             {% when "easy" %}{% assign badge_color = "success" %}
             {% when "medium" %}{% assign badge_color = "warning" %}
