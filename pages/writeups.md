@@ -24,10 +24,12 @@ permalink: /writeups/
             {% when "hard" %}{% assign badge_color = "danger" %}
           {% endcase %}
           {% if badge_color %}
+          <div class='badge-section'>
             <span class="badge badge-{{ badge_color }}">{{ post.difficulty }}</span>
           {% endif %}
           {% if post.subject %}
             <span class="badge badge-primary">{{ post.subject }}</span>
+          </div>
         {% endif %}
         </p>
         </div>

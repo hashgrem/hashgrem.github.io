@@ -151,3 +151,38 @@ img {
   color:black;
   border: 1px solid black;
 }
+
+@media only screen and (max-width: 768px) {
+  .badge  {
+    display: inline;
+    padding: 0.35em 0.65em;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    margin: 5px 5px 5px 0px !important;
+    float: left;
+  }
+  .badge-success {
+    color: #09a82e;
+    background-color: #bdfab7;
+  }
+  
+  .badge-warning {
+    color: #dda706;
+    background-color: #faeaba;
+  }
+  
+  .badge-danger {
+    color: #fff;
+    background-color: #dc3545;
+  }
+  
+  .badge-primary {
+    color: #0d6efd;
+    background-color: #c7dbf8;
+  }
+}
