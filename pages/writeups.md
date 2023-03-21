@@ -38,3 +38,17 @@ permalink: /writeups/
   {% endif %}
 {% endfor %}
 </div>
+
+<style>
+
+  .badge-section{
+    margin-top:-45px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .badge-section{
+      margin-top:0px;
+    }
+  
+  }
+</style>
