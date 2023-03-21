@@ -10,16 +10,43 @@ categories: [writeups]
 subject: AD
 reading: 7m
 ---
-_______________________________________________________________________________________<br><br>
 
 <link rel="stylesheet" href="/css/lil-bootstrap.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
+_____________________________________________________
 
+
+<br>
+
+**Table of contents:**
+
+- <a href="#enumeration">Enumeration</a>
+    - <a href="#nmap">Nmap</a>
+    - <a href="#enum4linux">Enum4linux</a>
+    - <a href="#kerbrute">Kerbrute</a>
+- <a href="#abusing">Abusing kerberos with ASREPRoasting</a>
+    - <a href="#getnpusers">GetNPUsers</a>
+    - <a href="#hashcat">Hashcat</a>
+- <a href="#smb-exploitation">SMB Exploitation</a>
+    - <a href="#recon">Recon</a>
+    - <a href="#gaining-access">Gaining access</a>
+- <a href="#secretsdump">Secretsdump</a>
+- <a href="#privesc">Gaining access & Privesc</a>
+    - <a href="#pass">Pass the hash</a>
+
+<br>
 *99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller?*
 
 Room link: <a href="https://tryhackme.com/room/attacktivedirectory">TryHackMe - Attacktive Directory</a>
+
+<br>
+
+_____________________________________________________
+
+<br>
+
 ## Enumeration
 
 Basic enumeration starts out with an nmap scan in order to understand the attack surface.
@@ -167,7 +194,10 @@ This Kerbrute bruteforce is very usefull because he discovered many users on the
 
 Pre-authentication is a security mechanism used by the Kerberos protocol. It works by sending a packet containing a request for an encrypted TGT ticket with the user's account secret key and a timestamp. If the domain server accepts the request, it returns a packet containing an encrypted TGT ticket which is then used for user authentication.
 
-In this case, "svc-admin" user is able to log in without going through this pre-authentication step. 
+In this case, "svc-admin" user is able to log in without going through this pre-authentication step.
+
+<span id='abusing'></span>
+
 ## Abusing kerberos with ASREPRoasting
 
 Once the enumeration of user accounts is completed, we can try to exploit a feature in Kerberos using an attack technique known as ASREPRoasting. ASREPRoasting happens when a user account has the privilege "Does not require Pre-Authentication" enabled as explained in the previous step.
@@ -329,8 +359,15 @@ ATTACKTIVEDIREC$:des-cbc-md5:[REDACTED]
 [*] Cleaning up...
 ```
 Now we have Administrator password hash in possession, we can move on a Pass The Hash exploitation. This attack is possible because Windows systems store password hashes in memory and do not require the plaintext password for authentication. 
+
+<span id='privesc'></span>
+
 ## Gaining access & Privesc
 *IP has changed because the VM has expired.*
+
+<span id='pass'></span>
+
+### Pass the hash
 
 ![privesc-ad](/images/pwned-ad.png)
 
