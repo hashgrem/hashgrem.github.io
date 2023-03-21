@@ -47,11 +47,11 @@ _____________________________________________________
 
 <br>
 
-## Enumeration
+## **Enumeration**
 
 Basic enumeration starts out with an nmap scan in order to understand the attack surface.
 
-### Nmap
+### **Nmap**
 
 ```bash
 ┌──(teiiko㉿kali)-[~]
@@ -120,10 +120,11 @@ Host script results:
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 417.26 seconds
-````
+```
+
 This Nmap scan reveals that the target is an Active Directory. Indeed, several open ports are related to an AD, ports 88 for Kerberos authentication, 389 and 3268 for LDAP. Moreover, it revealed that the domain name of the Active Directory is "spookysec.local".
 
-### enum4linux
+### **enum4linux**
 
 enum4linux is used to enumerate information from Windows and Samba systems. It is designed to be used in penetration testing engagements and can be used to gather valuable information about a target system, such as user names, shares, and other sensitive data.
 
@@ -186,7 +187,7 @@ S-1-5-21-3591857110-2884097990-301047963-1000 THM-AD\ATTACKTIVEDIREC$ (Local Use
 Here, enum4linux allows us to enumerate some local users and domain group wich can be usefull later.
 
 In order to enumerate more users on the domain, we can use Kerbrute, working on bruteforce process with a given wordlist.
-### Kerbrute
+### **Kerbrute**
 
 ![attack](/images/attacktive-1.png)
 
@@ -198,13 +199,13 @@ In this case, "svc-admin" user is able to log in without going through this pre-
 
 <span id='abusing'></span>
 
-## Abusing kerberos with ASREPRoasting
+## **Abusing kerberos with ASREPRoasting**
 
 Once the enumeration of user accounts is completed, we can try to exploit a feature in Kerberos using an attack technique known as ASREPRoasting. ASREPRoasting happens when a user account has the privilege "Does not require Pre-Authentication" enabled as explained in the previous step.
 
 To exploit this vulnerability, we will use `GetNPUsers` script from Impacket (<a href="https://github.com/fortra/impacket">https://github.com/fortra/impacket</a>).
 
-### GetNPUsers
+### **GetNPUsers**
 
 ```bash
 ┌──(teiiko㉿kali)-[~/Bureau/tools/kerbrute/dist]
@@ -217,7 +218,7 @@ $krb5asrep$23$svc-admin@SPOOKYSEC.LOCAL:xxxxxxxxxxxfb$bda69125e4fca78ae99b770ef2
 
 Now we have our hash for svc-admin user, we can try to crack him using hashcat or john (hashcat in my case).
 
-### Hashcat
+### **Hashcat**
 
 I used hashcat examples ( <a href="https://hashcat.net/wiki/doku.php?id=example_hashes">Hashcat exemples</a> ) to get the right mode.
 
@@ -230,9 +231,9 @@ $krb5asrep$23$svc-admin@SPOOKYSEC.LOCAL:xxxxxxxxxxxxxxfea97$cdcaaccfacdd4b5bddb1
 
 So now, we have svc-admin account credentials.
 
-## SMB Exploitation
+## **SMB Exploitation**
 
-### Recon
+### **Recon**
 
 ```bash
 ┌──(teiiko㉿kali)-[~]
@@ -249,7 +250,7 @@ Password for [WORKGROUP\svc-admin]:
         SYSVOL          Disk      Logon server share 
 ```
 We can notice an interesting shared folder: `backup`. Let's try to get an access.
-### Gaining access
+### **Gaining access**
 
 ```bash
 ┌──(teiiko㉿kali)-[~]
@@ -273,7 +274,7 @@ After downloading the backup_credentials.txt file on my local machine, i recogni
 backup@spookysec.local:[REDACTED]
 ```
 
-## Secretsdump
+## **Secretsdump**
 
 `secretsdump.py` script is a tool in the Impacket suite that allows to get stored credential information on a local or remote Windows system using password extraction techniques. It can be used to retrieve passwords for local accounts, domain accounts, encryption keys, service secrets, Kerberos keys, session tokens, and TGT tickets. 
 
@@ -362,12 +363,12 @@ Now we have Administrator password hash in possession, we can move on a Pass The
 
 <span id='privesc'></span>
 
-## Gaining access & Privesc
+## **Gaining access & Privesc**
 *IP has changed because the VM has expired.*
 
 <span id='pass'></span>
 
-### Pass the hash
+### **Pass the hash**
 
 ![privesc-ad](/images/pwned-ad.png)
 
