@@ -6,6 +6,7 @@ layout: home
 ---
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 <script src="/js/typelighter.min.js"></script>
+<script src="/js/darktheme.js"></script>
 
 <section class="profile">
           <img src="images/giyu.gif" alt="Photo de profil" style="border-radius:50%;">
