@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const title = document.getElementsByClassName('site-title')[0];
     const icons = document.getElementsByTagName('i');
     const writer = document.getElementById('writer');
-    const wrapper = document.getElementsByClassName('wrapper')[0];
     const rm = document.getElementsByClassName('root-me')[0];
     const postTitle = document.getElementsByClassName('post-list-heading')[0];
+    const siteHeader = document.getElementsByClassName('site-header')[0];
     
     const dark_bg_color = '#1e1e1e';
     const light_bg_color = 'white';
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     theme.style.cursor = 'pointer';
 
     postTitle.innerHTML = "Recents posts"
-
+    siteHeader.style.borderTop = '0px solid';
     header.appendChild(theme);
 
     theme.addEventListener('click', function(){
@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             writer.style.color = light_bg_color;
             rm.style.backgroundColor = light_bg_color;
             postTitle.style.color = light_bg_color;
+            siteHeader.style.borderTop = '0px solid';
+            siteHeader.style.borderBottom = '0px solid';
 
             for (let i = 0 ; i < navItems.length ; i++){
                 navItems[i].style.color = light_bg_color;
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             body.style.backgroundColor = light_bg_color;
             title.style.color = dark_bg_color;
             writer.style.color = dark_bg_color;
+            siteHeader.style.borderBottom = '1px solid #e8e8e8';
 
             for (let i = 0 ; i < navItems.length ; i++){
                 navItems[i].style.color = dark_bg_color;
