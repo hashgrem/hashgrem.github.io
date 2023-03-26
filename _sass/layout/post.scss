@@ -17,7 +17,7 @@
 }
 
 @mixin dot($pl: 0.25rem, $pr: 0.25rem) {
-  content: '\2022';
+  content: "\2022";
   padding-left: $pl;
   padding-right: $pr;
 }
@@ -26,8 +26,16 @@
   color: var(--text-color);
 }
 
+%preview-margin {
+  margin: 0;
+}
+
 .preview-img {
+  @include align-center;
+  @extend %preview-margin;
   @extend %rounded;
+
+  max-width: 100%;
 
   &:not(.no-bg) {
     img.lazyloaded {
@@ -40,6 +48,7 @@
     -o-object-fit: cover;
     object-fit: cover;
 
+    @extend %preview-margin;
     @extend %rounded;
   }
 }
@@ -91,7 +100,6 @@ h1 + .post-meta {
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 
     .share-icons {
@@ -116,7 +124,7 @@ h1 + .post-meta {
         &:hover {
           text-decoration: none;
 
-          > i {
+          >i {
             @extend %btn-share-hovor;
           }
         }
@@ -251,58 +259,24 @@ h1 + .post-meta {
   transition: top 0.2s ease-in-out;
   -webkit-animation: fade-up 0.8s;
   animation: fade-up 0.8s;
+}
 
-  ul {
-    list-style: none;
-    font-size: 0.85rem;
-    line-height: 1.25;
-    padding-left: 0;
+#toc {
+  ul.nav.navbar-nav {
+    margin: 0.5rem 0;
+    padding: 0;
 
     li {
-      &:not(:last-child) {
-        margin: 0.4rem 0;
-      }
-
-      a {
-        padding: 0.2rem 0 0.2rem 1.25rem;
-      }
+      padding-top: 2px;
+      padding-bottom: 2px;
     }
+  }
+}
 
-    /* Overwrite TOC plugin style */
-
-    .toc-link {
-      display: block;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-
-      &:hover {
-        color: var(--toc-highlight);
-        text-decoration: none;
-      }
-
-      &::before {
-        display: none;
-      }
-    }
-
-    .is-active-link {
-      color: var(--toc-highlight) !important;
-      font-weight: 600;
-
-      &::before {
-        display: inline-block;
-        width: 1px;
-        left: -1px;
-        height: 1.25rem;
-        background-color: var(--toc-highlight) !important;
-      }
-    }
-
-    ul {
-      a {
-        padding-left: 2rem;
-      }
+nav[data-toggle="toc"] {
+  .nav {
+    .nav > li > a.active {
+      font-weight: 600 !important;
     }
   }
 }
@@ -359,8 +333,7 @@ h1 + .post-meta {
     margin-bottom: 2rem;
   }
 
-  /* stylelint-disable-next-line selector-id-pattern */
-  #disqus_thread {
+  #disqus_thread { /* stylelint-disable-line selector-id-pattern */
     min-height: 8.5rem;
   }
 }
@@ -373,7 +346,7 @@ h1 + .post-meta {
   @include label(inherit, 400, inherit);
 
   &::after {
-    content: ':';
+    content: ":";
   }
 }
 

@@ -4,14 +4,16 @@ about: Suggest an idea for this project
 labels: enhancement
 ---
 
-**NOTE:** Before you start, the following should be completed.
+<!-- NOTE: Please maintain all sections, otherwise the issue will be automatically closed :) -->
 
-- Read [tutorial][tutorial] to understand the usage and the correct effect of functional design.
-- Make sure no [similar issue(including closed ones)][issues] exists.
-- Make sure the request is based on the latest code in the `master` branch.
+## Checklist
 
-[tutorial]: https://cotes2020.github.io/chirpy-demo/categories/tutorial/
-[issues]: https://github.com/cotes2020/jekyll-theme-chirpy/issues?q=is%3Aissue
+<!-- Please complete the following list of tasks, and then check it by changing the "[ ]" to "[x]" -->
+- [ ] I have read the [contributing guidelines](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/.github/CONTRIBUTING.md).
+- [ ] There is no similar request on [existing issues](https://github.com/cotes2020/jekyll-theme-chirpy/issues?q=is%3Aissue) (including closed ones).
+- [ ] I have read the [project progress](https://github.com/cotes2020/jekyll-theme-chirpy/projects) and know the current progress of the project.
+- [ ] I was in the `master` branch of the latest code.
+
 
 ## Is your feature request related to a problem? Please describe
 
