@@ -1,19 +1,24 @@
 ---
-layout: post
 title: "[TryHackMe] - Attacktive Directory"
 date: 2023-03-05
-description: 99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller?
-author: Teiiko
+author: me
 tags: ["Active Directory"]
-difficulty: medium
 categories: [writeups]
-subject: AD
-reading: 7m
+toc: true
+comments: false
+mermaid: false
+math: false
 ---
 
-<link rel="stylesheet" href="/css/lil-bootstrap.css">
+<link rel="stylesheet" href="/assets/css/lil-bootstrap.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+*99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller?*
+
+Room link: <a href="https://tryhackme.com/room/attacktivedirectory">TryHackMe - Attacktive Directory</a>
+
+<br>
 
 _____________________________________________________
 
@@ -36,10 +41,6 @@ _____________________________________________________
 - <a href="#privesc">Gaining access & Privesc</a>
     - <a href="#pass">Pass the hash</a>
 
-<br>
-*99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller?*
-
-Room link: <a href="https://tryhackme.com/room/attacktivedirectory">TryHackMe - Attacktive Directory</a>
 
 <br>
 
@@ -375,34 +376,3 @@ Now we have Administrator password hash in possession, we can move on a Pass The
 > 🚩 *Pwned*
 
 Thanks for reading ! Give me a feedback on Discord - `Teiiko#8831`
-
-<button id="back-to-top-btn" class="btn arrow btn-lg circle"><i class="fas fa-arrow-up"></i></button>
-
-<style>
-#back-to-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 40px;
-  display:none;
-  cursor:pointer;
-}
-
-</style>
-
-<script>
-    // Afficher/masquer le bouton "scroll to top"
-$(window).scroll(function() {
-  if ($(this).scrollTop() > 100) {
-    $('#back-to-top-btn').fadeIn();
-  } else {
-    $('#back-to-top-btn').fadeOut();
-  }
-});
-
-// Faire remonter au header de la page lorsque le bouton est cliqué
-$('#back-to-top-btn').click(function() {
-  $('html, body').animate({scrollTop : 0},800);
-  return false;
-});
-
-</script>
