@@ -2,7 +2,7 @@
 title: "[TryHackMe] - Attacktive Directory"
 date: 2023-03-05
 author: me
-tags: ["Active Directory"]
+tags: ["Active Directory", "TryHackMe"]
 categories: [writeups]
 toc: true
 comments: false
