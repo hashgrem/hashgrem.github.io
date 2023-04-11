@@ -6,7 +6,7 @@
   /* Framework color */
   --body-bg: var(--main-bg);
   --mask-bg: rgb(68, 69, 70);
-  --main-bg: rgb(27, 27, 30);
+  --main-bg: rgb(28, 0, 37);
   --main-border-color: rgb(44, 45, 45);
 
   /* Common color */
@@ -36,7 +36,7 @@
     );
 
   /* Sidebar */
-  --sidebar-bg: radial-gradient(circle, #242424 0%, #1d1f27 100%);
+  --sidebar-bg: radial-gradient(circle, #331339 0%, #1d1f27 100%);
   --sidebar-muted-color: #9f87e3;
   --sidebar-active-color: #9f87e3;
   --nav-cursor-color: #9f87e3;
@@ -44,7 +44,7 @@
 
   /* Topbar */
   --topbar-text-color: var(--text-color);
-  --topbar-wrapper-bg: rgb(39, 40, 43);
+  --topbar-wrapper-bg: rgb(20, 3, 26);
   --search-wrapper-bg: rgb(34, 34, 39);
   --search-wrapper-border-color: rgb(34, 34, 39);
   --search-icon-color: rgb(100, 102, 105);
