@@ -185,7 +185,7 @@ S-1-5-21-3591857110-2884097990-301047963-1000 THM-AD\ATTACKTIVEDIREC$ (Local Use
 
 ```
 
-Here, enum4linux allows us to enumerate some local users and domain group wich can be usefull later.
+Here, enum4linux allows us to enumerate some local users and domain group which can be usefull later.
 
 In order to enumerate more users on the domain, we can use Kerbrute, working on bruteforce process with a given wordlist.
 ### Kerbrute
