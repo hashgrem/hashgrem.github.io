@@ -20,6 +20,8 @@ tags: ["Hardware", "FCSC"]
 
 *Note : La capture logique a été réalisée avec le logiciel Saleae Logic 2.*
 
+<i class="fas fa-paperclip"></i> [dystylosaurus.sal](/assets/attachments/dystylosaurus.sal)
+
 <br>
 
 _____________________________________________________
