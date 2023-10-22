@@ -36,6 +36,7 @@ _____________________________________________________
     - <a href="#last-condition">Last Condition</a>
 - <a href="#flag">Flag</a>
 - <a href="#references">References</a>
+- <a href="#mentions">Mentions</a>
 
 <br>
 
@@ -381,3 +382,12 @@ Thanks for reading !
 - <a href="https://owasp.org/www-pdf-archive/PHPMagicTricks-TypeJuggling.pdf" target="_blank">PHP Magic Tricks: Type Juggling</a>
 - <a href="https://github.com/spaze/hashes/tree/master" target="_blank">Magic Hashes - PHP Hash Collisions</a>
 - <a href="https://www.secjuice.com/abusing-php-query-string-parser-bypass-ids-ips-waf/" target="_blank">Secjuice - Abusing PHP query string parser to bypass IDS, IPS, and WAF</a>
+
+### Mentions
+
+Special mentions to:
+
+- <a href="https://www.bzhack.bzh/" target="_blank">BZHack</a>
+- <a href="https://esdacademy.eu" target="_blank">ESD Academy</a>
+- <a href="https://yogosha.com/" target="_blank">Yogosha</a>
+- <a href="https://www.synoptik-labs.com/" target="_blank">Synoptik Labs</a>
