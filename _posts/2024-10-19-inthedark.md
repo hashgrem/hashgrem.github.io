@@ -28,7 +28,7 @@ _____________________________________________________
 **Table of contents:**
 
 - <a href="#given-file">Given file</a>
-- <a href="#aperi'solve">Aperi'Solve</a>
+- <a href="#aperi-solve">Aperi'Solve</a>
 
 <br>
 
@@ -45,7 +45,7 @@ We are given the following `.png` file:
 
 My first idea was to upload the picture in Aperi'Solve in order to see every data.
 
-## Aperi'Solve
+## Aperi Solve
 
 After uploading we quickly notice new data appearing after color manipulation:
 
