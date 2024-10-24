@@ -62,6 +62,16 @@ _____________________________________________________
 
 ## OSINT
 
+- Epios - [https://epieos.com/](https://epieos.com/)
+- Have I Been Pwned - [https://haveibeenpwned.com/](https://haveibeenpwned.com/)
+- Holele (Email to Registered Accounts) - [https://github.com/megadose/holehe](https://github.com/megadose/holehe)
+- Whatsmyname (Username Accounts) [https://whatsmyname.app/](https://whatsmyname.app/)
+- Dehashed - [https://www.dehashed.com/](https://www.dehashed.com/)
+- Ransom DB - [https://www.ransom-db.com/](https://www.ransom-db.com/)
+- Yandex (Reverse Image Lookup) -  [https://yandex.com/images/](https://yandex.com/images/)
+- SunCalc - [https://www.suncalc.org/](https://www.suncalc.org/)
+
+
 ## Forensic
 
 ## Network
