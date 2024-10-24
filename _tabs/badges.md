@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-medal
-order: 5
+order: 6
 ---
 <div class='d-flex'>
 <div class="badgr-badge w-50 px-4 " style="font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif; "><a href="https://api.badgr.io/public/assertions/_T9Fdmg4Q0-o1l-folcmWw?identity__email=teiikoctf%40gmail.com" target="_blank"><img width="300px" height="300px" src="https://api.badgr.io/public/assertions/_T9Fdmg4Q0-o1l-folcmWw/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: left; color: rgb(169, 154, 212);">DEADFACE CTF 2024 Competitor</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: rgb(169, 154, 212);">Awarded: </strong>19 oct. 2024</p><p style="margin: 16px 0; padding: 0;"><a class="badgr-badge-verify" target="_blank" href="https://badgecheck.io?url=https%3A%2F%2Fapi.badgr.io%2Fpublic%2Fassertions%2F_T9Fdmg4Q0-o1l-folcmWw%3Fidentity__email%3Dteiikoctf%2540gmail.com&amp;identity__email=teiikoctf%40gmail.com" style="box-sizing: content-box; display: flex; align-items: center; justify-content: center; margin: 0; font-size:14px; font-weight: bold; width: 48px; height: 16px; border-radius: 4px; border: solid 1px rgb(169, 154, 212); text-decoration: none; padding: 6px 16px; margin: 16px 0; color: rgb(169, 154, 212);">VERIFY</a></p></div>
