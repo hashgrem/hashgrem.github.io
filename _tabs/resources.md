@@ -16,7 +16,7 @@ Quick Access:
 - <a href="#forensic">Forensic</a>
 - <a href="#network">Network</a>
 - <a href="#active-directory">Active Directory</a>
-- <a href="#linux-privilege-escalation">Linux Privilege Escalation</a>
+- <a href="#privilege-escalation">Privilege Escalation</a>
 - <a href="#wordlist">Wordlist</a>
 
 
