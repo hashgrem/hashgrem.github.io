@@ -43,11 +43,17 @@ _____________________________________________________
 - CSS Injection - [https://github.com/ariary/cssrf](https://github.com/ariary/cssrf)
 - CSP Bypass - [https://bugbase.ai/blog/csp-bypass-common-techniques-and-mitigations](https://bugbase.ai/blog/csp-bypass-common-techniques-and-mitigations)
 - File Upload - [https://www.prplbx.com/resources/blog/exploiting-file-upload-vulnerabilities/](https://www.prplbx.com/resources/blog/exploiting-file-upload-vulnerabilities/)
+- Web-Check (Analyze URL) - [https://web-check.xyz/](https://web-check.xyz/)
+- Wappalyzer - [https://www.wappalyzer.com/](https://www.wappalyzer.com/)
+- FoxyProxy - [https://getfoxyproxy.org/](https://getfoxyproxy.org/)
+- Cookie Editor - [https://cookie-editor.com/](https://cookie-editor.com/)
+- BurpSuite - [https://portswigger.net/burp](https://portswigger.net/burp)
 - PHP Insecure Deserialization - [https://www.synacktiv.com/publications/finding-a-pop-chain-on-a-common-symfony-bundle-part-1](https://www.synacktiv.com/publications/finding-a-pop-chain-on-a-common-symfony-bundle-part-1)
 
 ## Crypto
 
 - CryptoBook - [https://cryptohack.gitbook.io/cryptobook](https://cryptohack.gitbook.io/cryptobook)
+- CyberChef - [https://gchq.github.io/CyberChef/](https://gchq.github.io/CyberChef/)
 
 ## Steganography
 
