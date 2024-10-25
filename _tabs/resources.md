@@ -54,6 +54,18 @@ _____________________________________________________
 
 - CryptoBook - [https://cryptohack.gitbook.io/cryptobook](https://cryptohack.gitbook.io/cryptobook)
 - CyberChef - [https://gchq.github.io/CyberChef/](https://gchq.github.io/CyberChef/)
+- CrackStation - [https://crackstation.net/](https://crackstation.net/)
+- RsaCtfTool - [https://github.com/RsaCtfTool/RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool)
+- Factordb - [http://factordb.com/](http://factordb.com/)
+- Alpertron (Integer factorization) - [https://www.alpertron.com.ar/ECM.HTM](https://www.alpertron.com.ar/ECM.HTM)
+- XOR Calculator - [https://xor.pw/](https://xor.pw/)
+- Cryptii - [https://cryptii.com/](https://cryptii.com/)
+- Hash Identifier - [https://hashes.com/en/tools/hash_identifier](https://hashes.com/en/tools/hash_identifier)
+- ROT Decoder - [https://theblob.org/rot.cgi](https://theblob.org/rot.cgi)
+- Dagger's Alphabet - [https://www.dcode.fr/daggers-alphabet](https://www.dcode.fr/daggers-alphabet)
+- Caesar Cipher - [https://www.dcode.fr/caesar-cipher](https://www.dcode.fr/caesar-cipher)
+- Vigenere Cipher - [https://www.dcode.fr/chiffre-vigenere](https://www.dcode.fr/chiffre-vigenere)
+- Quipqiup (Substitution solver) - [https://quipqiup.com/](https://quipqiup.com/)
 
 ## Steganography
 
@@ -64,6 +76,7 @@ _____________________________________________________
 - Binwalk - [https://github.com/ReFirmLabs/binwalk](https://github.com/ReFirmLabs/binwalk)
 - Steghide - [https://github.com/StefanoDeVuono/steghide](https://github.com/StefanoDeVuono/steghide)
 - Sonic Visualiser - [https://www.sonicvisualiser.org/](https://www.sonicvisualiser.org/)
+- GIMP (Image manipulation) - [https://www.gimp.org/downloads/](https://www.gimp.org/downloads/)
 - Steg in HTML tags - [https://www.researchgate.net/figure/Stego-Html-source](https://www.researchgate.net/figure/Stego-Html-source-after-embedding-the-secret-message_fig2_45909979)
 
 ## OSINT
