@@ -48,6 +48,8 @@ _____________________________________________________
 - FoxyProxy - [https://getfoxyproxy.org/](https://getfoxyproxy.org/)
 - Cookie Editor - [https://cookie-editor.com/](https://cookie-editor.com/)
 - BurpSuite - [https://portswigger.net/burp](https://portswigger.net/burp)
+- RequestBin - [https://pipedream.com/requestbin](https://pipedream.com/requestbin)
+- GitDumper.sh - [https://github.com/internetwache/GitTools](https://github.com/internetwache/GitTools)
 - PHP Insecure Deserialization - [https://www.synacktiv.com/publications/finding-a-pop-chain-on-a-common-symfony-bundle-part-1](https://www.synacktiv.com/publications/finding-a-pop-chain-on-a-common-symfony-bundle-part-1)
 
 ## Crypto
