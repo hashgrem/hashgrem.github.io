@@ -123,6 +123,10 @@ _____________________________________________________
 
 ## Network
 
+- WireShark - [https://www.wireshark.org/](https://www.wireshark.org/)
+- Network Miner - [https://www.netresec.com/?page=NetworkMiner](https://www.netresec.com/?page=NetworkMiner)
+- PcapXray - [https://github.com/Srinivas11789/PcapXray](https://github.com/Srinivas11789/PcapXray)
+
 ## Active Directory
 
 - InternalAllTheThings - [https://swisskyrepo.github.io/InternalAllTheThings/](https://swisskyrepo.github.io/InternalAllTheThings/)
