@@ -62,15 +62,28 @@ _____________________________________________________
 
 ## OSINT
 
+- Bellingcat Toolkit - [https://bellingcat.gitbook.io/toolkit](https://bellingcat.gitbook.io/toolkit)
+- Tools & Resources Database - [https://start.me/p/7k6gwv/osint-tools](https://start.me/p/7k6gwv/osint-tools)
 - Epios - [https://epieos.com/](https://epieos.com/)
 - Have I Been Pwned - [https://haveibeenpwned.com/](https://haveibeenpwned.com/)
 - Holele (Email to Registered Accounts) - [https://github.com/megadose/holehe](https://github.com/megadose/holehe)
-- Whatsmyname (Username Accounts) [https://whatsmyname.app/](https://whatsmyname.app/)
+- Whatsmyname (Search by username) [https://whatsmyname.app/](https://whatsmyname.app/)
+- Phoneinfoga - [https://github.com/sundowndev/phoneinfoga](https://github.com/sundowndev/phoneinfoga)
+- PimEyes (Face Recognition) - [https://pimeyes.com/en](https://pimeyes.com/en)
+- Lullar (People search) - [https://com.lullar.com/](https://com.lullar.com/)
+- Lenso (AI Reverse image search) - [https://lenso.ai/en](https://lenso.ai/en)
+- Guide to Online Anonymity - [https://anonymousplanet.org/guide.html](https://anonymousplanet.org/guide.html)
 - Dehashed - [https://www.dehashed.com/](https://www.dehashed.com/)
 - Ransom DB - [https://www.ransom-db.com/](https://www.ransom-db.com/)
+- Ransom Wiki - [https://ransom.wiki/](https://ransom.wiki/)
+- LeakIX - [https://leakix.net/](https://leakix.net/)
 - Yandex (Reverse Image Lookup) -  [https://yandex.com/images/](https://yandex.com/images/)
 - SunCalc - [https://www.suncalc.org/](https://www.suncalc.org/)
-
+- Mountain Explorer - [https://peakvisor.com/panorama.html](https://peakvisor.com/panorama.html?lat=45.9420159&lng=7.8699421&alt=4598)
+- Server status map - [https://airspy.com/directory/](https://airspy.com/directory/)
+- Google Earth Pro - [https://www.google.com/earth/about/versions/#download-pro](https://www.google.com/earth/about/versions/#download-pro)
+- Stolen Camera Finder - [https://www.stolencamerafinder.com/](https://www.stolencamerafinder.com/)
+- Depix (Recover plaintext from pixelized screenshots) - [https://github.com/spipm/Depix](https://github.com/spipm/Depix)
 
 ## Forensic
 
