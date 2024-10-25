@@ -108,6 +108,19 @@ _____________________________________________________
 
 ## Forensic
 
+- Volatility3 - [https://github.com/volatilityfoundation/volatility3](https://github.com/volatilityfoundation/volatility3)
+- Network Miner - [https://www.netresec.com/?page=NetworkMiner](https://www.netresec.com/?page=NetworkMiner)
+- Forensic Guide - [http://trailofbits.github.io/ctf/forensics/](http://trailofbits.github.io/ctf/forensics/)
+- View Metadata Online - [https://www.metadata2go.com/view-metadata](https://www.metadata2go.com/view-metadata)
+- Extract Strings - [https://www.fileformat.info/tool/strings.htm](https://www.fileformat.info/tool/strings.htm)
+- Binwalk - [https://github.com/ReFirmLabs/binwalk](https://github.com/ReFirmLabs/binwalk)
+- Audacity - [https://www.audacityteam.org/](https://www.audacityteam.org/)
+- Pdfinfo - [https://linux.die.net/man/1/pdfinfo](https://linux.die.net/man/1/pdfinfo)
+- Repair Broken JPG - [https://jpg.repair/](https://jpg.repair/)
+- Recover Lost Data - [https://www.cgsecurity.org/wiki/PhotoRec](https://www.cgsecurity.org/wiki/PhotoRec)
+- Kpartx - [https://linux.die.net/man/8/kpartx](https://linux.die.net/man/8/kpartx)
+- Recover Deleted Files with TestDisk - [https://www.tecmint.com/recover-deleted-files-using-testdisk-in-linux/](https://www.tecmint.com/recover-deleted-files-using-testdisk-in-linux/)
+
 ## Network
 
 ## Active Directory
