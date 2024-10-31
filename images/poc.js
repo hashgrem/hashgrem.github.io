@@ -9,8 +9,10 @@ const localIps = [
 function fetchInternalAPI() {
     console.log('func called');
     localIps.forEach(ip => {
-        fetch(ip, headers: {
-            "Referer": "http://127.0.0.1/"
+        fetch(ip, {
+            headers: {
+                "Referer": "http://127.0.0.1/"
+            }
         })
         .then(response => response.text())
         .then(data => {
