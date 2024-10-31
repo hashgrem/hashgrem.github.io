@@ -8,7 +8,7 @@ const localIps = [
     "http://10.0.1.1/api.php"
 ];
 
-const proxyUrl = "https://e2cd-92-149-40-183.ngrok-free.app/proxy?url=";
+const proxyUrl = "https://cors-anywhere.herokuapp.com/https://e2cd-92-149-40-183.ngrok-free.app/proxy?url=";
 
 function fetchInternalAPI() {
     console.log("Function called");
